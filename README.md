@@ -38,6 +38,6 @@ To enable this technology, follow the steps:
 1. Host A makes a TYYP request, request headers and body are parsed by the ISP and logged before any action is taken.
 1. ISP resolves the IP address of the destination host. It's often asked whether there aren't any design flaws since we address no DNS issues. The DNS is not required for this system to work, but we allow clients to make DNS requests not the break the existing software, such as legacy browsers.
 1. ISP decides whether the end destination is allowed to be visited or not. If it's a yes, we authenticate the user automatically (if required) and make an identical HTTP(s) request to Host B.
-1. Host B responds and responses.
+1. Host B responses.
 1. ISP receives the packet, parses it, logs the headers and the body, and puts an entry to the user's scorecard according to the destination resource's content rating.
 1. The response is returned to the source as a TYYP response.
