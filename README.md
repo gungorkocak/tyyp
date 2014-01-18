@@ -2,7 +2,7 @@
 
 ![A demonstrator shows love and support for TYYP during one of the recent protests in Istanbul](http://i.imgur.com/nqiy80v.jpg)
 
-TYYP is an application level networking protocol for government controlled information systems, named after the notable 21st century villian Recep Tayyip Erdogan. TYYP was not started or is being coordinated by an open standards consorcium, because openness and freedom are oxymorons of the dictatorial values we commonly share and some of our design goals.
+TYYP is an application level networking protocol for government controlled information systems, named after the notable 21st century villian Recep Tayyip Erdogan. TYYP was not started or is being coordinated by an open standards concorcium, because openness and freedom are oxymorons of the dictatorial values we commonly share and some of our design goals.
 
 ## Features and design goals
 
@@ -10,7 +10,7 @@ TYYP is an application level networking protocol for government controlled infor
 * Removes the bad side effects of HTTPs.
 * Removes anonymity permanently. You can match any request with a subscriber. Good news is that your subsribers don't need to remember passwords anymore, your ISPs can automatically log your users into any website.
 * Provides full functional parity with HTTP/HTTPs on the client level. It's perfectly backwards compatible, browsers don't need to support TYYP. Your users can keep continue to use fully open sourced browsers -- which is also a good selling point.
-* All requests are logged and persisted at least for 2 years, you don't need to be in a hurry investigate the dirty laundery of your subscribers.
+* All requests are logged and persisted at least for 2 years, you don't need to be in a hurry investigate the dirty laundry of your subscribers.
 * Makes it possible to censor or block a certain path under a domain. It is such a huge improvement over blocking the entire host or the entire IP block. DNS block is so 2000s...
 * Retrieve detailed metrics about the browsing trends in the large scale. You can monetize this information by selling it to marketing agencies.
 * Easy to market to the clueless public as a product of safe browsing.
@@ -28,4 +28,5 @@ To enable this technology, follow the steps:
 
 ## Architecture
 
-To be determined.
+* Parallel architecture 
+* Map/reduce capability in censorship
