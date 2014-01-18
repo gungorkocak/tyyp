@@ -1,6 +1,6 @@
 # tyyp://
 
-![A demonstrator shows love and support for TYYP during one of the recent protests in Istanbul](http://i.imgur.com/nqiy80v.jpg)
+![A demonstrator shows love and support for TYYP during one of the recent protests in Istanbul](http://i.imgur.com/E38iED0.jpg) ![Analytics](https://ga-beacon.appspot.com/UA-46881978-1/tyyp?pixel) ![TYYP in the making...](http://i.imgur.com/vN6U1MG.jpg)
 
 TYYP is an application level networking protocol for government controlled information systems, named after the notable 21st century villian Recep Tayyip Erdogan. TYYP was not started or is being coordinated by an open standards concorcium, because openness and freedom are oxymorons of the dictatorial values we commonly share and some of our design goals.
 
@@ -32,7 +32,7 @@ To enable this technology, follow the steps:
 * Use child porn or safe browsing needs as excuses. Know the point of failures of your society. If you're in Middle East, the first example may not work.
 
 ## Architecture
-
+~~~
 +--------+      +----------+      +-------+
 | Host A | ---- | Router A | ---- |  ISP  | -- central pipe to the Internet -+|
 +--------+      +----------+      +-------+                                   |
@@ -40,9 +40,10 @@ To enable this technology, follow the steps:
                                        |  Host B  | ----- |  Router B | ------+
                                        +----------+       +-----------+
 
-(1) Host A makes a TYYP request, request headers and body are parsed by the ISP and logged before any action is taken.
-(2) ISP resolves the IP address of the destination host. It's often asked whether there aren't any design flaws since we address no DNS issues. The DNS is not required for this system to work, but we allow clients to make DNS requests not the break the existing software, such as legacy browsers.
-(3) ISP decides whether the end destination is allowed to be visited or not. If it's a yes, we authenticate the user automatically (if required) and make an identical HTTP(s) request to Host B.
-(4) Host B responds and responses.
-(5) ISP receives the packet, parses it, logs the headers and the body, and puts an entry to the user's scorecard according to the destination resource's content rating.
-(6) The response is returned to the source as a TYYP response.
+~~~
+1. Host A makes a TYYP request, request headers and body are parsed by the ISP and logged before any action is taken.
+1. ISP resolves the IP address of the destination host. It's often asked whether there aren't any design flaws since we address no DNS issues. The DNS is not required for this system to work, but we allow clients to make DNS requests not the break the existing software, such as legacy browsers.
+1. ISP decides whether the end destination is allowed to be visited or not. If it's a yes, we authenticate the user automatically (if required) and make an identical HTTP(s) request to Host B.
+1. Host B responses.
+1. ISP receives the packet, parses it, logs the headers and the body, and puts an entry to the user's scorecard according to the destination resource's content rating.
+1. The response is returned to the source as a TYYP response.
