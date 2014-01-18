@@ -29,4 +29,4 @@ To enable this technology, follow the steps:
 ## Architecture
 
 * Parallel architecture 
-* Map/reduce capability in cencorship
+* Map/reduce capability in censorship
