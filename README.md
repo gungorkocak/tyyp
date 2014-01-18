@@ -17,6 +17,11 @@ TYYP is an application level networking protocol for government controlled infor
 * Allows you to jail anyone by faking the records.
 * Reminds you of Tayyip and the limitlessness of the evil.
 
+## Milestones
+
+* unSSL; implementing unSSL feature which enables to decrypt all encrypted packages and internet traffic ongoing. With this update, all kinds of user sensitive data and instant message traffic can be observed.
+
+
 
 ## Get started
 
